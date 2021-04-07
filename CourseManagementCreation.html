@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+<title>Course Management</title>
+<header>
+    <img src="qcfirst.jpg" alt="qcfirst">
+    <h1 class='qcfirst'>QCFirst</h1>
+</header>
+<body>
+<div class="courseInfo">
+    <h2 class="username">User Name</h2>
+    <h2 class='courseInfo'>Course Info</h2>
+</div>
+<div class="form">
+    <form action="CourseManagementInfo.html">
+        <label for="courseName">Course Name</label>
+        <input type="text" id="courseName" name="courseName">
+        <label for="semester">Semester</label>
+        <select name="semester" id="semester">
+            <option value="spring2021">Spring 2021</option>
+            <option value="summer2021">Summer 2021</option>
+            <option value="fall2021">Fall 2021</option>
+            <option value="winter2021">Winter 2021</option>
+        </select><br>
+        <label for="department">Department</label>
+        <select name="department" id="department">
+            <option value="computerScience">Computer Science</option>
+        </select>
+        <input type="text" id="cn" name="cn" placeholder="CNXXXXX"><br>
+        <label for="classTime">Time of Class</label>
+        <select name="classTime" id="classTime">
+            <option value="mo/we2000-2115">Mo/We 20:00-21:15</option>
+            <option value="tu/th2000-2115">Tu/Th 20:00-21:15</option>
+            <option value="mo/we800-915">Mo/We 08:00-09:15</option>
+            <option value="tu/th800-915">Tu/Th 08:00-09:15</option>
+            <option value="mo/we12000-1315">Mo/We 12:00-13:15</option> 
+        </select><br>
+        <label for="max">Max Capacity</label>
+        <input type="number" name="max" id="max" min="15" max="150">
+        <label for="deadline">Enroll Deadline</label>
+        <select name="deadline" id="deadline">
+            <option value="spring">01/30/2021</option>
+            <option value="summer">05/30/2021</option>
+            <option value="fall">08/30/2021</option>
+            <option value="winter">12/30/2021</option>
+        </select><br>
+        <textarea name="description" id="description" cols="50" rows="4" placeholder="Description:"></textarea><br>
+        <input type="submit" value="Create Course"/>
+    </form>
+</div>
+</body>
+</html>
