@@ -1,0 +1,121 @@
+.navbar
+{
+    overflow: auto;
+    background-color: pink;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+.navbar a
+{
+    float:left;
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar a:hover
+{
+    background: bisque;
+    color: black;
+}
+body
+{
+    font-size: 18pt;
+}
+img
+{
+    width: 64px;
+    height: 74px;
+    margin: 5px 50px;
+}
+h1
+{
+    position: fixed;
+    top: 0px;
+    right: 50px;
+}
+.courseInfo
+{
+    height: 100%;
+    width: 180px;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    left: 0;
+    background-color: #1D476E;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.courseInfo a
+{
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ebebe2;
+    display: block;
+}
+#text
+{
+    position: fixed;
+    top: 250px;
+    left: 300px;
+}
+
+textarea
+{
+    height: 100px;
+    width: 600px;
+    background-color: #1D476E;
+    color: #ebebe2;
+    margin: 20px;
+    font-family: "Roboto";
+    font-size: 18pt;
+}
+label
+{
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    background-color: #1D476E;
+    color: #ebebe2;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+input[type="text"]
+{
+    width: 200px;
+    background-color: #1D476E;
+    color: #ebebe2;
+    font-family: "Roboto";
+    padding: 3px 0px 3px 0px;
+    margin: 20px;
+    font-size: 18pt;
+
+}
+input
+{
+    background-color: #1D476E;
+    color: #ebebe2;
+    font-family: "Roboto";
+    padding: 3px 0px 3px 0px;
+    margin: 20px;
+    font-size: 18pt;
+
+}
+select
+{
+    width: 220px;
+    background-color: #1D476E;
+    color: #ebebe2;
+    font-family: "Roboto";
+    padding: 3px 0px 3px 0px;
+    margin: 20px;
+    font-size: 18pt;
+    justify-content: center;
+}
+
+
