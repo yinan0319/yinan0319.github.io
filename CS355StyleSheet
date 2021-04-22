@@ -1,0 +1,163 @@
+html
+{
+    font-family: inherit;
+    font-size: 100%;
+    background: aliceblue;
+}
+h2
+{
+    color: darkblue;
+}
+.design-1
+{
+    text-align: center;
+    font-family: "Times New Roman";
+    color:darkblue;
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    padding: 5%;
+    border-radius: 10%;
+
+}
+#email
+{background-color:white;
+ border-radius: 10%;
+    width:50%
+
+}
+#password
+{
+    background-color:white;
+    border-radius: 10%;
+    width:50%
+
+}
+#firstname
+{
+    background-color:white;
+    border-radius: 10%;
+    width:50%
+
+}
+#lastname
+{
+    background-color:white;
+    border-radius: 10%;
+    width:50%
+
+}
+#btn
+{
+    background-color:cornflowerblue;
+    width:40%;
+}
+.writing
+{
+   font-family: "Arial Rounded MT Bold" ;
+    text-align: center;
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 5%;
+
+}
+.foot
+{
+    font-family: "Arial Rounded MT Bold" ;
+    text-align: center;
+    clear: both;
+    position: fixed;
+    width: 50%;
+
+
+}
+.btn-sign
+{
+    background-color: darkblue;
+    color:white;
+    font-family: "Times New Roman";
+    padding: 2%;
+    margin-bottom: 6%;
+    border-radius: 20%;
+
+}
+.student-home
+{
+    text-align: center;
+    font-family: "Times New Roman ";
+    font-size: large;
+    color:darkblue;
+    width: 40%;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: white;
+    padding: 5%;
+    border-radius: 10%;
+
+}
+.btn-search
+{
+    background-color: darkblue;
+    color:white;
+    font-family: "Times New Roman";
+    text-align: center;
+    padding: 2%;
+    border-radius: 20%;
+}
+.btn-l
+{
+    color: white;
+    background : darkslateblue;
+    text-align: center;
+    text-decoration:none;
+    padding:6px;
+    border-radius:4px;
+    display: inline-block;
+}
+/*Responsiveness */
+
+@media screen and (max-width: 1000px)
+{
+
+    h2 {font-size: 2.4em;}
+}
+
+@media screen and (max-width: 825px)
+{
+
+h2 {font-size: 2.2em;}
+}
+
+@media screen and (max-width: 425px)
+{
+    h2 {
+        font-size:1.4em;
+
+    }
+    .writing
+    {
+        font-size: large;
+    }
+    .design-1
+    {
+     width: 50%;
+        top: 60px;
+        text-align: center;
+        padding: 10px;
+
+    }
+    .student-home
+    {
+        padding: 10px;
+        top:60px;
+        width: 100%;
+        text-align: center;
+font-size: large;
+    }
+    footer
+    {
+        font-size: large;
+    }
+}
