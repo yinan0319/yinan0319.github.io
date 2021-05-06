@@ -1,10 +1,7 @@
 # yinan0319.github.io
-<a href="https://yinan0319.github.io/index.html">Home Page</a><br>
-<p>The following pages are create by Khadija. In the Login page when click on "New User" would lead to Sign up page</p>
-<p>For student home page, when click on search would direct to search result when its function. When click on select would show up the course information.</p><br>
+<a href="https://pensive-leavitt-0b81c5.netlify.app/">QCfirst</a><br>
 
-<p>For the CSS part, we take care of our section. And had some advancement in the html part too.</p>
-
+###Team Members: Khadija and Yinan
 ### Login/Sign up Page
 <a href="https://yinan0319.github.io/Login.html">Login/Sign up Page</a>
 ### Student Home Page
