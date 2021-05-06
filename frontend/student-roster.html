@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+  Name :Yinan Du
+  Date: 05-01-2021
+  Section: CS 355
+
+Class Roster 
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Roster</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="custom-nav">
+      <div class="container">
+        <a href="student-homepage.html" class="navlink-logo"
+          ><img src="./assets/images/qcfirst.jpeg" alt="qcfirst-img"
+        /></a>
+        <button onclick="togglemenu()" class="burger-menu">
+          Menu <i class="fas fa-bars"></i>
+        </button>
+        <div id="toggleMenu" class="nav-items">
+          <a class="nav-links" href="add-course.html">Create Course</a>
+          <button onclick="logout()" class="nav-links nav-links-btn">
+            logout
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+      <h1 class="main-heading">Student in the course</h1>
+      <div class="handle-overflow">
+        <table class="list-table">
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Email</th>
+          </tr>
+          <tbody id="studentList"></tbody>
+        </table>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Copyright 2021 (Yinan and Khadija)</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/9e28beb911.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/Jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/student.roster.js"></script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+.user-form{
+    background-color: #fff8f8;
+    padding:50px 30px;
+    border:1px solid #344fa1;
+    border-top: 5px solid #344fa1;
+    border-bottom:5px solid #344fa1;
+    margin:30px;
+    text-align: center;
+}
+
+.user-form h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+.user-form p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    color: #344fa1;
+    margin-top: 10px;
+}
+.user-form button{
+    padding: 5px 10px;
+    background-color: #344fa1;
+    color: #f0ebcc;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: 0px;
+    font-size:20px;
+    transition: background 0.5s ease-in-out;
+}
+.user-form button:hover{
+    background-color: #3d84b8;
+}
+.formgroup label{
+    display: block;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.formgroup input{
+    width:100%;
+    padding:5px;
+    border-radius: 0px;
+    border: 1px solid #344fa1;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.radiogroup label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.radiogroup input{
+    margin-right: 5px;
+}
+.custom-nav{
+    background-color: #003568;
+}
+
+.navlink-logo img{
+    width:150px;
+    height: 150px;
+}
+.nav-items{
+    display: inline-block;
+    float: right;
+    margin-top:40px
+}
+.nav-links{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    margin-right: 10px;
+    text-transform: capitalize;
+    color: #003568;
+    padding:10px 15px;
+    background-color: #fff8f8;
+    border: 0px;
+    border: 1px solid transparent;
+    transition: background 0.5s ease-in-out;
+}
+.nav-links-btn{
+    padding:6px 15px;
+}
+.nav-links:hover{
+    text-decoration: none;
+    color: #f0ebcc;
+    background-color: #003568;
+    border: 1px solid #f0ebcc;
+}
+.burger-menu{
+    font-size: 20px;
+    background-color: transparent;
+    color: #f0ebcc;
+    border: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: right;
+    display: none;
+}
+.main-form{
+    padding: 30px 10px;
+}
+.main-heading{
+    margin: 30px 20px;
+    text-transform: capitalize;
+}
+.form-inlne{
+    display: inline-block;
+}
+.form-inlne label{
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #003568;
+}
+.form-inlne input,.form-inlne select{
+    width: 300px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.form-inlne textarea{
+ width: 500px;
+ display: block;
+}
+.footer{
+    text-align: center;
+    padding:20px;
+    background-color: #003568;
+    color: #f0ebcc;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.active{
+    display: block !important;
+}
+.primary-btn{
+    background-color: #003568;
+    color: #f0ebcc;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:10px 20px;
+    border: 0px;
+    text-transform: capitalize;
+}
+.primary-btn:hover{
+    background-color: #344fa1;
+}
+.list-table{
+    margin:30px 10px;
+    width: 100%;
+   
+}
+.list-table th{
+    background-color: #003568;
+    text-align: center;
+    color: #f0ebcc;
+    padding:20px 5px;
+    border: 1px solid #003568;
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.list-table td{
+    background-color: #fff8f8;
+    text-align: center;
+    color: #003568;
+    padding:20px 5px;
+    border: 1px solid #003568;
+    
+}
+.btn-fade{
+    background-color:#949494;
+}
+.btn-fade:hover{
+    background-color: #949494;
+}
+@media screen and (max-width: 800px){
+    .handle-overflow{
+        overflow-x: auto;
+    }
+    
+    .navlink-logo img{
+        width: 100px;
+        height:100px;
+    }
+    
+    .nav-items{
+        line-height: 60px;
+       display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .handle-overflow{
+        overflow-x: auto;
+    }
+    
+    .burger-menu{
+        display: block;
+        margin-top: 10px;
+    }
+    .nav-items{
+        float: none;
+       display: none;
+    }
+    .nav-links{
+        text-align: center;
+        display: block;
+        line-height: normal;
+        width: 100%;
+        font-size: 18px;
+        border: 0px;
+    }
+    .navlink-logo img{
+        width: 50px;
+        height:50px;
+    }
+    
+}
+}

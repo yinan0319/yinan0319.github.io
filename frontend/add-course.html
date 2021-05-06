@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="custom-nav">
+      <div class="container">
+        <a href="instructor-homepage.html" class="navlink-logo"
+          ><img src="./assets/images/qcfirst.jpeg" alt="qcfirst-img"
+        /></a>
+        <button onclick="togglemenu()" class="burger-menu">
+          Menu <i class="fas fa-bars"></i>
+        </button>
+        <div id="toggleMenu" class="nav-items">
+          <a class="nav-links" href="">add course</a>
+          <button onclick="logout()" class="nav-links nav-links-btn">
+            logout
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <div class="main-form">
+          <h1 class="main-heading">Add course info</h1>
+          <div class="form-inlne">
+            <label for="course-name">Course name</label>
+            <input type="text" id="courseName" name="course-name" />
+          </div>
+          <br />
+          <div class="form-inlne">
+            <label for="semester">Semester</label>
+            <select name="semester" id="ddnSemester">
+              <option value="Spring 2021" selected>Spring 2021</option>
+              <option value="Fall 2021">Fall 2021</option>
+            </select>
+          </div>
+          <div class="form-inlne">
+            <label for="department">Department</label>
+            <select name="department" id="ddnDepartment">
+              <option value="Computer Science">Computer Science</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="Physics">Physics</option>
+            </select>
+          </div>
+          <div class="form-inlne">
+            <label for="start-time">start time</label>
+            <input type="time" id="startTime" name="start-time" />
+            <label for="end-time">end time</label>
+            <input type="time" id="endTime" name="end-time" />
+          </div>
+          <div class="form-inlne">
+            <label for="capacity">Capacity</label>
+            <input type="number" id="capacity" name="capacity" />
+          </div>
+          <div class="form-inlne">
+            <label for="deadline">Enroll Deadline</label>
+            <input type="date" name="deadline" id="deadline" />
+          </div>
+          <br />
+          <div class="form-inlne">
+            <label for="description">Description</label>
+            <textarea rows="5" name="description" id="description"></textarea>
+          </div>
+          <button onclick="addCourse()" class="primary-btn d-block">
+            Add course
+          </button>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Copyright 2021 (Yinan and Khadija)</p>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/9e28beb911.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/Jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

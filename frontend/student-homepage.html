@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+  Name : Khadijatut Taiyeba (Khadija) 
+  Date: 05-01-2021
+  Section: CS 355
+
+  Student home page QC First 
+  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Homepage</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="custom-nav">
+      <div class="container">
+        <a href="student-homepage.html" class="navlink-logo"
+          ><img src="./assets/images/qcfirst.jpeg" alt="qcfirst-img"
+        /></a>
+        <button onclick="togglemenu()" class="burger-menu">
+          Menu <i class="fas fa-bars"></i>
+        </button>
+        <div id="toggleMenu" class="nav-items">
+          <button onclick="logout()" class="nav-links nav-links-btn">
+            logout
+          </button>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h1 class="main-heading">Search for courses</h1>
+        <div class="row">
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="form-inlne">
+              <label for="course-name">Course name</label>
+              <input type="text" id="courseName" name="course-name" />
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="form-inlne">
+              <label for="department">Department</label>
+              <select name="department" id="ddnDepartment">
+                <option value="Computer Science" selected>
+                  Computer Science
+                </option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Physics">Physics</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+            <div class="form-inlne">
+              <label for="semester">Semester</label>
+              <select name="semester" id="ddnSemester">
+                <option value="Spring 2021" selected>Spring 2021</option>
+                <option value="Fall 2021">Fall 2021</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+            <button onclick="searchCourse()" class="primary-btn">Search</button>
+          </div>
+        </div>
+      </div>
+      <section class="container">
+        <div class="handle-overflow">
+          <table class="list-table">
+            <tr>
+              <th>Course Name</th>
+              <th>Semester</th>
+              <th>Department</th>
+              <th>Capacity</th>
+              <th>Schedule</th>
+              <th>Students enrolled</th>
+              <th>Action</th>
+            </tr>
+            <tbody id="courseList"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <p>Copyright 2021 (Yinan and Khadija)</p>
+    </footer>
+    <script src="./assets/js/Jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/student.dashboard.js"></script>
+  </body>
+</html>

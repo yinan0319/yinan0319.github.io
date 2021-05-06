@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+  Name : Khadijatut Taiyeba (Khadija) 
+  Date: 05-01-2021
+  Section: CS 355
+
+  Sign up page for  QC First 
+  -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="./assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-6 mx-auto">
+          <div class="user-form">
+            <h3> QCFirst Signup</h3>
+            <p>Welcome! Please enter your information to sign up</p>
+            <div class="formgroup">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" required />
+            </div>
+            <div class="formgroup">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" required />
+            </div>
+            <div class="formgroup">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+                required
+              />
+            </div>
+            <div class="formgroup">
+              <label for="password">Password</label>
+              <input type="text" id="password" name="password" required />
+            </div>
+            <div class="formgroup">
+              <label for="c-password">Confirm password</label>
+              <input type="text" id="c-password" name="c-password" required />
+            </div>
+            <div id="radioDiv" class="radiogroup">
+              <label for="student">Student</label>
+              <input
+                type="radio"
+                id="student"
+                name="role"
+                value="student"
+                checked
+              />
+              <label for="instructor">Instructor</label>
+              <input
+                type="radio"
+                id="instructor"
+                name="role"
+                value="instructor"
+              />
+            </div>
+            <br />
+            <button type="submit" onclick="register()">Register</button>
+            <br />
+            <p>back to <a href="index.html">login</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/Jquery.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
