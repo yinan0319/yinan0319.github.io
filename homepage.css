@@ -1,0 +1,17 @@
+*{
+    background-color: bisque;
+}
+h1,p
+{
+    text-align: center;
+    color: dodgerblue;
+}
+
+a{
+    margin:10px,10px;
+    background-color:ivory;
+    
+}
+div{
+    text-align: center;
+}
