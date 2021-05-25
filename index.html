@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html>
+<meta charset="UTF-8">
 <title>CS 355 Home Page</title>
  <link rel="stylesheet" href="homepage.css">
 <body>
-  <h1>Welcome to Yinan's CS355 Home Page</h1>
-<p>This is my dashborad for CS355. The following are links of porjects completed through this semester!</p>
-<div>
-<a href="https://yinan0319.github.io/cssExercise.html">CS355 Exercise</a><br>
-<a href="https://yinan0319.github.io/Login.html">Login Page</a><br>
-<a href="https://yinan0319.github.io/CourseManagementCreation.html">Course Management Creation</a><br>
-<a href="https://yinan0319.github.io/Studenthomepage.html">Student Home Page</a><br>
-<a href="https://yinan0319.github.io/Typing/typing.html">Typing</a><br>
-<a href="https://yinan0319.github.io/Weather/weather.html">Weather</a><br>
-<a href="https://codepen.io/yinan0319/pen/JjWbXZe">Weather API</a><br>
-<a href="https://yinan0319.github.io/Chat/index.html">Chat</a><br>
-<a href="https://boilerplate-mongomongoose-2.yinan0319.repl.co">MongoDB and Mongoose</a><br>
-<a href="https://boilerplate-project-timestamp.yinan0319.repl.co/">Timestamp</a><br>
-<a href="https://boilerplate-project-headerparser.yinan0319.repl.co/">Request Header</a><br>
-<a href="https://boilerplate-project-urlshortener-1.yinan0319.repl.co/">URL shortener</a><br>
-<a href="https://boilerplate-project-exercisetracker.yinan0319.repl.co/">Exercise Tracker</a><br>
-<a href="https://boilerplate-project-filemetadata.yinan0319.repl.co/">File Metadata</a><br>
-<a href="https://freecodecamp.org/certification/fcc4799edd1-d3d4-4794-8da1-2cbd28bbf188/apis-and-microservices">API and Microservices Certification</a><br>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="https://yinan0319.github.io/cssExercise">About me</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Projects
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a class="dropdownitem" href="https://qcfirsttaiyeba.herokuapp.com/">Project Login</a>
+    <a class="dropdownitem" href="https://yinan0319.github.io/Typing/typing.html">Typing</a>
+    <a class="dropdownitem" href="https://yinan0319.github.io/Weather/weather.html">Weather</a>
+    <a class="dropdownitem" href="https://codepen.io/yinan0319/pen/JjWbXZe">Weather API</a>
+    <a class="dropdownitem" href="https://yinan0319.github.io/Chat/index.html">Chat</a>
+    <a class="dropdownitem" href="https://boilerplate-mongomongoose-2.yinan0319.repl.co">MongoDB and Mongoose</a>
+    <a class="dropdownitem" href="https://boilerplate-project-timestamp.yinan0319.repl.co/">Timestamp</a>
+    <a class="dropdownitem" href="https://boilerplate-project-headerparser.yinan0319.repl.co/">Request Header</a>
+    <a class="dropdownitem" href="https://boilerplate-project-urlshortener-1.yinan0319.repl.co/">URL shortener</a>
+    <a class="dropdownitem" href="https://boilerplate-project-exercisetracker.yinan0319.repl.co/">Exercise Tracker</a>
+    <a class="dropdownitem" href="https://boilerplate-project-filemetadata.yinan0319.repl.co/">File Metadata</a>
+    <a class="dropdownitem" href="https://freecodecamp.org/certification/fcc4799edd1-d3d4-4794-8da1-2cbd28bbf188/apis-and-microservices">API and Microservices Certification</a>
+  </div>
+  </div> 
 </div>
+
+<h1>Welcome to Yinan's CS355 Home Page</h1>
+<p>This is my dashborad for CS355. You can find all about me on the top!</p>
+<script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+  }
+  </script>
 </body>
+
 </html>
